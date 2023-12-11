@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins';
+}
+
+#logo {
+    width: 60px;
+}
+
+.active {
+    border-bottom: 2px solid #B31312;
+    width: fit-content;
+    color: #2B2A4C !important;
+}
+
+#hero {
+    background-image: url('../images/background.jpg');
+    background-color: rgba(0, 0, 0, .5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.text-red {
+    color: #B31312;
+}
+
+.bg-red {
+    background-color: #B31312 !important;
+}
+
+.text-cadet {
+    color: #2B2A4C;
+}
+
+.bg-cadet {
+    background-color: #2B2A4C;
+}
+
+.dropdown-item:active {
+    background-color: #B31312;
+}
+
+.card {
+    border: none;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20%);
+    transition: all 1s;
+}
+
+.animate {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media only screen and (min-width: 992px) {
+    #logo {
+        width: auto;
+    }
+    .card-img-top {
+        width: 30rem;
+    }
+}
